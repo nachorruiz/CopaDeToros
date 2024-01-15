@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa de Toros</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="iniciarSesion">
+    <header>
+        <img src="/imagenes/logo CopaDeToros1.png" alt="Imagen de fondo Copa de toros" class="logo">
+    
+        <nav>
+            <ul>
+                <li>
+                    <a href="/pages/iniciarSesion.html" class="active">
+                        <button class="buttonsesion"><i class="fa-solid fa-user"></i></button>
+                    </a> 
+                </li>
+                <li>
+                    <a href="/pages/rankings.html">Rankings</a>
+                </li>
+                <li>
+                    <a href="/pages/multimedia.html">Multimedia</a>
+                </li>
+                <li>
+                    <a href="/pages/inscripciones.html">Inscripciones</a>
+                </li>
+                <li>
+                    <a href="/index.html">Menú</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="titlesesion">¡Bienvenido de vuelta!</h1>
+        <form action="action_page.php" method="post">
+            <div class="container">
+                <label for="uname"><b>Email</b></label>
+                <input type="text" placeholder="" name="uname" required>
+        
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="" name="psw" required>
+            </div>
+        
+            <section>
+                <a href="">
+                    <button class="inicioSesion">
+                        INICIAR SESIÓN
+                    </button>
+                </a>
+
+                <a href="">
+                    <button class="inicioGoogle">
+                        <i class="fa-brands fa-google"></i> INICIAR CON GOOGLE
+                    </button>
+                </a>
+            </section>
+            <article class="sesionlinks">
+                <a href="">No tenes una cuenta?</a>
+                <a href="" class="sesioncontrasena">Olvidaste la contraseña?</a>
+            </article>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; Ignacio Ruiz Company</p>
+        <section>
+            <a href="https://www.instagram.com/copa_de_toros/" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@CopadeToros" class="youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </section>
+    </footer>
+</body>
+</html>
