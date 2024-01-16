@@ -1,21 +1,26 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap'); */
+/*@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');*/
+
 /* Imagenes de fondo */
 .index{
-    background-image: url(/imagenes/background-img2.png);
+    background-image: url(../imagenes/background-img2.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .iniciarSesion{
-    background-image: url(/imagenes/iniciarsesionToro.png);
+    background-image: url(../imagenes/iniciarsesionToro.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .inscripciones{
-    background-image: url(/imagenes/inscripcionesToro.png);
+    background-image: url(../imagenes/inscripcionesToro.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .multimedia{
-    background-image: url(/imagenes/recordsToro.png);
+    background-image: url(../imagenes/recordsToro.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
 
@@ -23,14 +28,9 @@
 }
 .rankings{
     background-color: #292828;
-    background-image: url(/imagenes/cuernoToro.png);
+    background-image: url(../imagenes/cuernoToro.png);
     background-repeat: no-repeat;
 }
-
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*HEADER*/
 
@@ -884,11 +884,11 @@ footer{
 @media only screen and (min-width: 481px) and (max-width: 991px){
     /*BACKGROUNDIMAGES*/
     .index{
-        background-image: url(/imagenes/backgroundtablet/mainbackgroundtablet.png);
+        background-image: url(../imagenes/backgroundtablet/mainbackgroundtablet.png);
     }
 
     .iniciarSesion{
-        background-image: url(/imagenes/backgroundtablet/sesionbackgroundtablet.png);
+        background-image: url(../imagenes/backgroundtablet/sesionbackgroundtablet.png);
     }
 
     /* HEADER */
