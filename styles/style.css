@@ -39,6 +39,32 @@
     margin-left: 0.8%;
 }
 
+.navbar{
+    margin-bottom: 4%;
+}
+
+.nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #1494BF;
+}
+
+.navbar-nav{
+    --bs-nav-link-hover-color: #FFD204;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 25%;
+}
+
+.navbar-toggler{
+    background-color: #1494BF;
+    margin-left: 85%;
+    margin-top: -12%;
+}
+
 main a{
     list-style-type: none;
     overflow: hidden;
@@ -46,6 +72,10 @@ main a{
     color: white;
     font-family: 'Assistant', sans-serif;
     font-size: 12px;
+}
+
+#sesionmobile{
+    display: none;
 }
 
 /* NAV */
@@ -110,6 +140,7 @@ main h1{
     font-family: 'Heebo', sans-serif; 
     font-size: 50px;
     margin-left: 35px;
+    font-weight: bolder;
 }
 
 main h2{
@@ -145,7 +176,8 @@ main h6{
     font-family: 'Assistant', sans-serif;
     font-style: italic;
     margin-left: 70px;
-    margin-top: -32px;
+    margin-top: -7px;
+    font-weight: bolder;
 }
 
 div h6{
@@ -279,6 +311,14 @@ section h1{
     margin-left: -50%;
 }
 
+.sesionlinks {
+    display: inline-flex;
+    justify-content: center;
+    gap: 11%;
+    margin: 2% 27.5%;
+    width: 45%;
+}
+
 /*BOTONES*/
 .buttoncuerno{
     background-color: #FFD204;
@@ -339,6 +379,7 @@ div .buttoncuerno {
     color: white;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1%;
     display: block;
     text-decoration: none;
     cursor: pointer;
@@ -349,7 +390,7 @@ div .buttoncuerno {
     font-size: 16px;
     font-family: 'Lobster', sans-serif;
     border: none;
-    width: 15%;
+    width: 20.6%;
     height: 36px;
 }
 
@@ -369,7 +410,7 @@ div .buttoncuerno {
     font-size: 16px;
     font-family: 'Lobster', sans-serif;
     border: none;
-    width: 15%;
+    width: 20.6%;
     height: 36px;
 }
 
@@ -456,10 +497,11 @@ form label{
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 form input{
-    width: 15%;
+    width: 30%;
     padding: 12px 20px;
     margin-top: 16px;
     margin-bottom: 32px;
@@ -476,7 +518,6 @@ form input{
 /*No tenes una cuenta?*/
 form a{
     color: white; 
-    margin-left: 43%;
     font-family: 'Assistant', sans-serif;
 }
 /*Olvidaste tu contraseña?*/
@@ -579,7 +620,7 @@ form a{
 }
 
 .toro-milano{
-    width: 13%;
+    width: 250px;
     margin-left: 75px;
 }
 
@@ -657,9 +698,23 @@ footer{
     }
 
     /*HEADER*/
-    nav{
+
+    #sesionmobile{
+        display: unset;
+    }
+
+    .buttonsesion{
         display: none;
     }
+
+    .navbar-nav{
+        margin-left: 65%;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 0;
+    }
+
     /*MAIN*/
     /*Textos*/
     main h1{
@@ -685,8 +740,8 @@ footer{
         display: flex;
         justify-content: center;
         margin-left: 0;
-        margin-top: -6%;
         text-align: center;
+        font-weight: bolder;
     }
 
     main a{
@@ -716,8 +771,9 @@ footer{
     .sesionlinks{
         display: flex;
         justify-content: space-around;
-        margin-left: -75%;
+        margin: 2% 10%;
         margin-top: 4%;
+        width: unset;
     }
 
     mark{
@@ -759,6 +815,7 @@ footer{
         color: white;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 4%;
         display: block;
         text-decoration: none;
         cursor: pointer;
@@ -769,7 +826,7 @@ footer{
         font-size: 16px;
         font-family: 'Lobster', sans-serif;
         border: none;
-        width: 70%;
+        width: 73%;
         height: 36px;
     }
 
@@ -787,7 +844,7 @@ footer{
         font-size: 16px;
         font-family: 'Lobster', sans-serif;
         border: none;
-        width: 70%;
+        width: 73%;
         height: 36px;
     }
 
@@ -815,10 +872,87 @@ footer{
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
+/* @media only screen and (min-width: 481px) and (max-width: 768px){
 
 }
 
 @media only screen and (min-width: 769px){
 
+}
+*/
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+    /*BACKGROUNDIMAGES*/
+    .index{
+        background-image: url(/imagenes/backgroundtablet/mainbackgroundtablet.png);
+    }
+
+    .iniciarSesion{
+        background-image: url(/imagenes/backgroundtablet/sesionbackgroundtablet.png);
+    }
+
+    /* HEADER */
+    .navbar-nav{
+        margin-left: 84%;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 0;
+    }
+    /* TEXTOS */
+    main h1{
+        text-align: center;
+    }
+
+    main h6{
+        text-align: center;
+    }
+
+    main p{
+        text-align: center;
+    }
+
+    .sesionlinks{
+        display: inline-flex;
+        justify-content: center;
+        gap: 30%;
+        margin: 2% 28%;
+        width: 45%;
+    }
+
+    /* IMAGENES */
+    .toro-milano{
+        width: 35%;
+        margin-left: 35%;
+    }
+
+    /* BOTONES */
+    .buttoncuerno{
+        margin: 2% 40%;
+        width: 24.8%;
+        justify-content: center;
+    }
+
+    .inicioSesion{
+        width: 42.5%;
+        margin-bottom: 2%;
+    }
+
+    .inicioGoogle{
+        width: 42.5%;
+    }
+
+    /* FORMS */
+
+    form input{
+        width: 40%;
+    }
+
+    form a{
+        margin-left: 0;
+    }
+
+    section a{
+        margin-left: 43%;
+    }
 }
