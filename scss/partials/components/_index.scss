@@ -1,0 +1,277 @@
+/* Imagenes de fondo */
+.index{
+    background-image: url(../imagenes/background-img2.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.iniciarSesion{
+    background-image: url(../imagenes/iniciarsesionToro.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.inscripciones{
+    background-image: url(../imagenes/inscripcionesToro.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.multimedia{
+    background-image: url(../imagenes/recordsToro.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    overflow-x: hidden;
+}
+.rankings{
+    background-color: #292828;
+    background-image: url(../imagenes/cuernoToro.png);
+    background-repeat: no-repeat;
+}
+
+/*TEXTOS*/
+main{ 
+    h1{
+        color:#FFD204;
+        font-family: 'Heebo', sans-serif; 
+        font-size: 50px;
+        margin-left: 35px;
+        font-weight: bolder;
+    }
+
+    h2{
+        color: white;
+        font-family: 'Heebo', sans-serif; 
+        font-size: 38px;
+        font-style: italic;
+        margin-left: 154px;
+        margin-top: -32px;
+    }
+
+    h3{
+        color:#FFD204;
+        font-family: 'Heebo', sans-serif; 
+        font-size: 35px;
+        margin-left: 109px;
+    }
+
+    h4{
+        color:#FFD204;
+        font-family: 'Heebo', sans-serif; 
+        font-size: 18px;
+        position: absolute;
+        right: 320px;
+        top: 230px;
+        text-align: center;
+    }
+
+    h6{
+        color: white;
+        font-size: 15px;
+        font-family: 'Assistant', sans-serif;
+        font-style: italic;
+        margin-left: 70px;
+        margin-top: -7px;
+        font-weight: bolder;
+    }
+
+    p{
+        color: white;
+        font-family: 'Lobster', sans-serif;
+        margin-left: 35px;
+    }
+}
+
+div{
+    h1{
+        color:#FFD204;
+        font-family: 'Heebo', sans-serif; 
+        margin-left: 103px;
+    }
+
+    h2{
+        color: #097F72;
+        font-family: 'Heebo', sans-serif; 
+        font-size: 30px;
+        margin-top: 25px;
+        margin-left: 5%;
+    }
+
+    h6{
+        color: white;
+        font-size: 20px;
+        font-family: 'Assistant', sans-serif;
+        font-style: italic;
+        margin-left: 104px;
+        margin-top: -32px;
+    } 
+
+    p{
+        color: white;
+        font-family: 'Lobster', sans-serif;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    #parrafoCuerno{
+        color: white;
+        font-family: sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    section {
+        background: white;
+        display: flex;
+        padding: 6px;
+        width: 25%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 51%;
+
+        p{
+            color: black;
+        }
+    }
+}
+
+section{ 
+    h1{
+        color: #FFD204;
+        font-family: 'Heebo', sans-serif;
+        font-size: 55px;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    h2{
+        color:#FFD204;
+        font-family: 'Heebo', sans-serif; 
+        font-size: 45px;
+        text-align: center;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+
+    p{
+        color: #FFD204;
+        font-family: 'Heebo', sans-serif;
+        font-weight: bolder;
+    }
+}
+
+.punteros{ 
+    p{
+        color: white;
+        font-family: 'Lobster', sans-serif;
+        text-align: center;
+        font-size: 10px;
+        margin-left: 8px;
+        position: absolute;
+        margin-top: -26px;
+    }
+
+    h4{
+        color: #bbbbbb;
+        font-family: 'Lobster', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        position: unset;
+        margin-left: -50%;
+    }
+
+    h6{
+        color: white;
+        font-size: 15px;
+        font-family: 'Assistant', sans-serif;
+        font-style: italic;
+        margin-left: 8px;
+        margin-top: -10px;
+        position: absolute;
+    }
+}
+
+.inscripcionestitle{
+    color:#FFD204;
+    font-family: 'Heebo', sans-serif; 
+    font-size: 45px; 
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    text-align: center;
+}
+
+.pieimagen{
+    color: gray;
+    font-size: 13px;
+}
+
+.titlesesion{
+    color:#FFD204;
+    font-family: 'Heebo', sans-serif; 
+    font-size: 50px;
+    text-align: center;
+}
+
+mark {
+    background-color: rgba(255, 210, 4, 0.4);
+    color: white;
+}
+
+.sesionlinks {
+    display: inline-flex;
+    justify-content: center;
+    gap: 11%;
+    margin: 2% 27.5%;
+    width: 45%;
+}
+
+/*MULTIMEDIA*/
+.noticias{
+    width: 100%;
+}
+
+.videoyt{
+    width: 100%;
+}
+
+.toro-milano{
+    width: 250px;
+    margin-left: 75px;
+}
+
+
+.punteroscontainer {
+    display: flex;
+    gap: 3%;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+
+.punteros{ 
+    img{
+        width: 50%;
+    }
+
+    h4:hover{
+        color: #FFD204;
+        cursor: default;
+    }
+
+    &:hover{ 
+        img{
+            transform: rotate(-15deg);
+            transition: 0.5s;
+        }
+
+        p{
+            color: #FFD204;
+        }
+    }
+}
+
+#active{
+    color: #1494BF;
+}

@@ -1,0 +1,309 @@
+/* ----------- MEDIA QUERYS ------------ */
+@media only screen and (max-width: 480px){
+    /*BACKGROUND*/
+    .index{
+        background-image: url(../imagenes/backgroundmobile/backgroundimgmobile.png);
+    }
+
+    .iniciarSesion{
+        background-image: url(../imagenes/backgroundmobile/iniciarsesionmobile.png);
+    }
+
+    .rankings{
+        background-color: #292828;
+        background-image: url(/imagenes/backgroundmobile/rankingsmobile.png);
+        background-repeat: no-repeat;
+    }
+
+    /*HEADER*/
+
+    #sesionmobile{
+        display: unset;
+    }
+
+    .buttonsesion{
+        display: none;
+    }
+
+    .navbar-nav{
+        margin-left: 65%;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 0;
+    }
+
+    /*MAIN*/
+    /*Textos*/
+    main{ 
+        h1{
+            color:#FFD204;
+            font-family: 'Heebo', sans-serif; 
+            font-size: 40px;
+            /*position: relative;
+            left: 1%;*/
+            display: flex;
+            justify-content: center;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        h6{
+            color: white;
+            font-size: 15px;
+            font-family: 'Assistant', sans-serif;
+            font-style: italic;
+            /*position: relative;
+            margin-top: -6%;
+            left: -6%;*/
+            display: flex;
+            justify-content: center;
+            margin-left: 0;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        a{
+            list-style-type: none;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            font-family: 'Assistant', sans-serif;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    
+    section a{
+        list-style-type: none;
+        overflow: hidden;
+        text-decoration: none;
+        color: white;
+        font-family: 'Assistant', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        display: unset;
+    }
+
+    .sesionlinks{
+        display: flex;
+        justify-content: space-around;
+        margin: 2% 10%;
+        margin-top: 4%;
+        width: unset;
+    }
+
+    mark{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: -35px;
+        margin-top: 15%;
+    }
+
+    .pieimagen{
+        color: gray;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: -1%;
+    }
+
+    
+    
+    /*Botones*/
+    .buttoncuerno{
+        background-color: #FFD204;
+        font-family: 'Lobster', sans-serif;
+        border: none;
+        color: black;
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.8;
+        transition: 0.3s;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .inicioSesion {
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 4%;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s;
+        background-color: rgba(178, 162, 115, 1);
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Lobster', sans-serif;
+        border: none;
+        width: 73%;
+        height: 36px;
+    }
+
+    .inicioGoogle {
+        color: #B2A273;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: 0.3s;
+        background-color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Lobster', sans-serif;
+        border: none;
+        width: 73%;
+        height: 36px;
+    }
+
+    /*Forms*/
+    form input {
+        width: 70%;
+        padding: 12px 20px;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid gray;
+        background-color: rgba(0, 0, 0, 0);
+        display: block;
+        color: white;
+    }
+
+    /*Imagenes*/
+    .toro-milano{
+        width: 55%;
+        margin-left: 23.5%;
+    }
+
+}
+
+/* @media only screen and (min-width: 481px) and (max-width: 768px){
+
+}
+
+@media only screen and (min-width: 769px){
+
+}
+*/
+
+@media only screen and (min-width: 481px) and (max-width: 991px){
+    /*BACKGROUNDIMAGES*/
+    .index{
+        background-image: url(../imagenes/backgroundtablet/mainbackgroundtablet.png);
+    }
+
+    .iniciarSesion{
+        background-image: url(../imagenes/backgroundtablet/sesionbackgroundtablet.png);
+    }
+
+    /* HEADER */
+    .navbar-nav{
+        margin-left: 84%;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        margin-left: 0;
+    }
+    /* TEXTOS */
+    main{ 
+        h1{
+            text-align: center;
+        }
+
+        h6{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+    } 
+
+    .sesionlinks{
+        display: inline-flex;
+        justify-content: center;
+        gap: 30%;
+        margin: 2% 28%;
+        width: 45%;
+    }
+
+    .punteros{ 
+        h4{
+            font-size: 0.8rem;
+        }
+
+        h6{
+            font-size: 0.8rem;
+        }
+
+        p{
+            font-size: 0.5rem;
+            margin-top: -31px;
+        }
+
+        img{
+            width: 70%;
+            margin-top: 15%;
+        }
+    }
+
+    /* IMAGENES */
+    .toro-milano{
+        width: 35%;
+        margin-left: 35%;
+    }
+
+    /* BOTONES */
+    .buttoncuerno{
+        margin: 2% 40%;
+        width: 24.8%;
+        justify-content: center;
+    }
+
+    .inicioSesion{
+        width: 42.5%;
+        margin-bottom: 2%;
+    }
+
+    .inicioGoogle{
+        width: 42.5%;
+    }
+
+    /* FORMS */
+
+    form{ 
+        input{
+            width: 40%;
+        }
+
+        a{
+            margin-left: 0;
+        }
+    }
+
+    section a{
+        margin-left: 43%;
+    }
+}
+
+//DESKTOP
+@media only screen and (min-width: 992px){
+    #navcolorfix{
+        --bs-nav-link-color: rgb(255,255,255);
+        --bs-nav-link-hover-color: #ffd204;
+    }
+}

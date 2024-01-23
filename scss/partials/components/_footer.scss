@@ -1,0 +1,27 @@
+/*FOOTER*/
+footer{ 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+
+    p{
+        color: #B2B6B7;
+    }
+
+    section{
+        display: inline-flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-right: 12px;
+    }
+}
+
+.instagram{
+    font-size: 25px;
+    color: #e5c838;
+}
+
+.youtube{
+    font-size: 25px;
+    color: #e5c838;
+} 

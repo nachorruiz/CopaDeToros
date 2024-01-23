@@ -1,0 +1,101 @@
+/*TABLAS*/
+.inscriptos{
+    margin-left: 35px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid gray;
+
+    tr:nth-child(odd) {
+        background-color: rgb(214, 238, 238);
+    }
+    tr:nth-child(even) {
+        background-color: rgb(194, 225, 221);
+    }
+
+    td{
+        text-align: center;
+        padding: 13px;
+        &:first-child{
+            text-align: left;
+        }
+    }
+}
+
+.tablescroll{
+    height:500px;
+    overflow:auto;  
+    margin-top:20px;
+}
+
+.tablescroll::-webkit-scrollbar{
+    display: none;
+}
+
+div table{
+    width: 25%;
+    border: 1px solid;
+    font-family: 'Lobster', sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+td{
+    color: #414444;
+}
+/*Color del icono de trophy*/
+.contenedortablas{
+    margin-top: 15%;
+}
+
+.fa-trophy{
+    color: #eae31f;
+}
+
+section{ 
+    table{
+        width: 50%;
+        border: 1px solid;
+        font-family: 'Lobster', sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+        background-color:rgba(0, 0, 0, 0);
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+        border-color: #097F72;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    td{
+        color: #8E9292 ;
+    }
+}
+
+.scroll-bg{
+    background: rgba(0, 0, 0, 0);
+    width: 580px;
+    margin-left: 1%;
+}
+
+.scroll-div{
+    width: 600px;
+    background: rgba(0, 0, 0, 0);
+    height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-div::-webkit-scrollbar{
+    width: 8px;
+}
+
+.scroll-div::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0);
+}
+
+.scroll-div::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,187,45,1) 100%);
+    /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
+    border-radius: 10px;
+}

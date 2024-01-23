@@ -1,0 +1,91 @@
+/*BOTONES*/
+.buttoncuerno{
+    background-color: #FFD204;
+    font-family: 'Lobster', sans-serif;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 138px;
+    display: flex;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+div .buttoncuerno {
+    display: inline-flex;
+    padding: 16px;
+    margin-left: 74%;
+    position: absolute;
+    margin-top: -20%;
+}
+
+.buttoninscripcion{
+    background-color: #FFD204;
+    font-family: 'Lobster', sans-serif;
+    border: none;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 2% 0;
+    opacity: 0.8;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 138px;
+    display: flex;
+    margin-left: 42%;
+    &:hover{
+        opacity: 1;
+    }
+    
+}
+
+.inicioSesion{
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    background-color:rgba(178, 162, 115, 1);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lobster', sans-serif;
+    border: none;
+    width: 20.6%;
+    height: 36px;
+}
+
+.inicioGoogle{
+    color: #B2A273;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    background-color:rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lobster', sans-serif;
+    border: none;
+    width: 20.6%;
+    height: 36px;
+}

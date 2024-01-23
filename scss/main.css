@@ -3,36 +3,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap");
 /*@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap'); */
 /*@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');*/
-/* Imagenes de fondo */
-.index {
-  background-image: url(../imagenes/background-img2.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+/*BOTONES*/
+.buttoncuerno {
+  background-color: #FFD204;
+  font-family: "Lobster", sans-serif;
+  border: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 138px;
+  display: flex;
+}
+.buttoncuerno:hover {
+  opacity: 1;
 }
 
-.iniciarSesion {
-  background-image: url(../imagenes/iniciarsesionToro.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+div .buttoncuerno {
+  display: inline-flex;
+  padding: 16px;
+  margin-left: 74%;
+  position: absolute;
+  margin-top: -20%;
 }
 
-.inscripciones {
-  background-image: url(../imagenes/inscripcionesToro.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+.buttoninscripcion {
+  background-color: #FFD204;
+  font-family: "Lobster", sans-serif;
+  border: none;
+  color: black;
+  padding: 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 2% 0;
+  opacity: 0.8;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 138px;
+  display: flex;
+  margin-left: 42%;
+}
+.buttoninscripcion:hover {
+  opacity: 1;
 }
 
-.multimedia {
-  background-image: url(../imagenes/recordsToro.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  overflow-x: hidden;
+.inicioSesion {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+  background-color: rgb(178, 162, 115);
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lobster", sans-serif;
+  border: none;
+  width: 20.6%;
+  height: 36px;
 }
 
-.rankings {
-  background-color: #292828;
-  background-image: url(../imagenes/cuernoToro.png);
-  background-repeat: no-repeat;
+.inicioGoogle {
+  color: #B2A273;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 16px;
+  font-family: "Lobster", sans-serif;
+  border: none;
+  width: 20.6%;
+  height: 36px;
+}
+
+.cartas {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  margin-top: -35%;
+  margin-right: 14%;
+}
+
+.carta {
+  padding: 2rem;
+  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.7);
+  width: 10%;
+  transition: 0.2s;
+}
+.carta:hover {
+  transform: translateY(-1rem);
+}
+
+.cartasestaticas {
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  margin-top: -17%;
+  margin-right: 4%;
+}
+
+.cartasporcentajes {
+  display: flex;
+  justify-content: right;
+  gap: 10%;
+  margin-right: 8.5%;
+  margin-top: -2%;
+  font-size: 22px;
+}
+
+.cartaestatica {
+  padding: 2rem;
+  width: 10%;
+}
+
+.carta:not(:first-child) {
+  margin-left: -10rem;
+}
+
+.carta:hover ~ .carta {
+  transform: translateX(4rem);
+}
+
+.cartaTabla {
+  width: 12%;
 }
 
 /*HEADER*/
@@ -132,7 +243,38 @@ li a:hover {
   background-color: #FFD204;
 }
 
-/*MAIN*/
+/* Imagenes de fondo */
+.index {
+  background-image: url(../imagenes/background-img2.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.iniciarSesion {
+  background-image: url(../imagenes/iniciarsesionToro.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.inscripciones {
+  background-image: url(../imagenes/inscripcionesToro.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.multimedia {
+  background-image: url(../imagenes/recordsToro.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.rankings {
+  background-color: #292828;
+  background-image: url(../imagenes/cuernoToro.png);
+  background-repeat: no-repeat;
+}
+
 /*TEXTOS*/
 main h1 {
   color: #FFD204;
@@ -206,12 +348,20 @@ div p {
   font-size: 10px;
   margin-left: 5px;
 }
+div #parrafoCuerno {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 5px;
+}
 div section {
   background: white;
   display: flex;
   padding: 6px;
   width: 25%;
-  JUSTIFY-CONTENT: center;
+  justify-content: center;
   text-align: center;
   margin-left: 51%;
 }
@@ -303,213 +453,6 @@ mark {
   width: 45%;
 }
 
-/*BOTONES*/
-.buttoncuerno {
-  background-color: #FFD204;
-  font-family: "Lobster", sans-serif;
-  border: none;
-  color: black;
-  padding: 8px 16px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.8;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-left: 138px;
-  display: flex;
-}
-
-div .buttoncuerno {
-  display: inline-flex;
-  padding: 16px;
-  margin-left: 74%;
-  position: absolute;
-  margin-top: -20%;
-}
-
-.buttoncuerno:hover {
-  opacity: 1;
-}
-
-.buttoninscripcion {
-  background-color: #FFD204;
-  font-family: "Lobster", sans-serif;
-  border: none;
-  color: black;
-  padding: 16px;
-  text-align: center;
-  font-size: 16px;
-  margin: 0 0 2% 0;
-  opacity: 0.8;
-  transition: 0.3s;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-left: 138px;
-  display: flex;
-  margin-left: 42%;
-}
-
-.buttoninscripcion:hover {
-  opacity: 1;
-}
-
-.inicioSesion {
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1%;
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: 0.3s;
-  background-color: rgb(178, 162, 115);
-  text-align: center;
-  font-size: 16px;
-  font-family: "Lobster", sans-serif;
-  border: none;
-  width: 20.6%;
-  height: 36px;
-}
-
-/*.inicioSesion:hover{ background-color:rgba(178, 162, 115, 1); }*/
-.inicioGoogle {
-  color: #B2A273;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: 0.3s;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 16px;
-  font-family: "Lobster", sans-serif;
-  border: none;
-  width: 20.6%;
-  height: 36px;
-}
-
-/*.inicioGoogle:hover{ background-color:rgba(255, 255, 255, 1); }*/
-/*TABLAS*/
-.inscriptos {
-  margin-left: 35px;
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: 1px solid gray;
-}
-.inscriptos tr:nth-child(odd) {
-  background-color: rgb(214, 238, 238);
-}
-.inscriptos tr:nth-child(even) {
-  background-color: rgb(194, 225, 221);
-}
-
-.tablescroll {
-  height: 500px;
-  overflow: auto;
-  margin-top: 20px;
-}
-
-.tablescroll::-webkit-scrollbar {
-  display: none;
-}
-
-.inscriptos td {
-  text-align: center;
-  padding: 13px;
-}
-
-.inscriptos td:first-child {
-  text-align: left;
-}
-
-div table {
-  width: 25%;
-  border: 1px solid;
-  font-family: "Lobster", sans-serif;
-  font-size: 13px;
-  font-weight: bolder;
-}
-
-td {
-  color: #414444;
-}
-
-/*Color del icono de trophy*/
-.contenedortablas {
-  margin-top: 15%;
-}
-
-.fa-trophy {
-  color: #eae31f;
-}
-
-section table {
-  width: 50%;
-  border: 1px solid;
-  font-family: "Lobster", sans-serif;
-  font-size: 18px;
-  font-weight: bolder;
-  background-color: rgba(0, 0, 0, 0);
-  align-items: center;
-  text-align: center;
-  vertical-align: middle;
-  border-color: #097F72;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section td {
-  color: #8E9292;
-}
-
-/*FORMS*/
-form label {
-  color: white;
-  font-family: "Assistant", sans-serif;
-  font-size: 15px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-form input {
-  width: 30%;
-  padding: 12px 20px;
-  margin-top: 16px;
-  margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid gray;
-  background-color: rgba(0, 0, 0, 0);
-  display: block;
-  color: white;
-}
-
-/*No tenes una cuenta?*/
-form a {
-  color: white;
-  font-family: "Assistant", sans-serif;
-}
-
-/*Olvidaste tu contraseña?*/
-.sesioncontrasena {
-  color: white;
-  margin-left: 1%;
-  font-family: "Assistant", sans-serif;
-}
-
 /*MULTIMEDIA*/
 .noticias {
   width: 100%;
@@ -517,88 +460,6 @@ form a {
 
 .videoyt {
   width: 100%;
-}
-
-.scroll-bg {
-  background: rgba(0, 0, 0, 0);
-  width: 580px;
-  margin-left: 1%;
-}
-
-.scroll-div {
-  width: 600px;
-  background: rgba(0, 0, 0, 0);
-  height: 600px;
-  overflow: hidden;
-  overflow-y: scroll;
-}
-
-.scroll-div::-webkit-scrollbar {
-  width: 8px;
-}
-
-.scroll-div::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
-}
-
-.scroll-div::-webkit-scrollbar-thumb {
-  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(253, 187, 45) 100%);
-  /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
-  border-radius: 10px;
-}
-
-/*IMAGENES*/
-.cartas {
-  display: flex;
-  justify-content: right;
-  position: absolute;
-  margin-top: -35%;
-  margin-right: 14%;
-}
-
-.carta {
-  padding: 2rem;
-  box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.7);
-  width: 10%;
-  transition: 0.2s;
-}
-
-.cartasestaticas {
-  display: flex;
-  justify-content: right;
-  position: absolute;
-  margin-top: -17%;
-  margin-right: 4%;
-}
-
-.cartasporcentajes {
-  display: flex;
-  justify-content: right;
-  gap: 10%;
-  margin-right: 8.5%;
-  margin-top: -2%;
-  font-size: 22px;
-}
-
-.cartaestatica {
-  padding: 2rem;
-  width: 10%;
-}
-
-.carta:not(:first-child) {
-  margin-left: -10rem;
-}
-
-.carta:hover ~ .carta {
-  transform: translateX(4rem);
-}
-
-.cartaTabla {
-  width: 12%;
-}
-
-.carta:hover {
-  transform: translateY(-1rem);
 }
 
 .toro-milano {
@@ -616,48 +477,20 @@ form a {
 .punteros img {
   width: 50%;
 }
-
-.punteros:hover img {
-  transform: rotate(-15deg);
-  transition: 0.5s;
-}
-
-.punteros:hover p {
-  color: #FFD204;
-}
-
 .punteros h4:hover {
   color: #FFD204;
   cursor: default;
 }
-
-/*FOOTER*/
-footer p {
-  color: #B2B6B7;
+.punteros:hover img {
+  transform: rotate(-15deg);
+  transition: 0.5s;
+}
+.punteros:hover p {
+  color: #FFD204;
 }
 
-.instagram {
-  font-size: 25px;
-  color: #e5c838;
-}
-
-.youtube {
-  font-size: 25px;
-  color: #e5c838;
-}
-
-footer section {
-  display: inline-flex;
-  justify-content: flex-end;
-  gap: 15px;
-  margin-right: 12px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5%;
-  margin: 1%;
+#active {
+  color: #1494BF;
 }
 
 /* ----------- MEDIA QUERYS ------------ */
@@ -782,7 +615,7 @@ footer {
     cursor: pointer;
     border-radius: 4px;
     transition: 0.3s;
-    background-color: rgba(178, 162, 115, 0.8);
+    background-color: rgb(178, 162, 115);
     text-align: center;
     font-size: 16px;
     font-family: "Lobster", sans-serif;
@@ -799,7 +632,7 @@ footer {
     cursor: pointer;
     border-radius: 4px;
     transition: 0.3s;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
     font-family: "Lobster", sans-serif;
@@ -868,6 +701,20 @@ footer {
     margin: 2% 28%;
     width: 45%;
   }
+  .punteros h4 {
+    font-size: 0.8rem;
+  }
+  .punteros h6 {
+    font-size: 0.8rem;
+  }
+  .punteros p {
+    font-size: 0.5rem;
+    margin-top: -31px;
+  }
+  .punteros img {
+    width: 70%;
+    margin-top: 15%;
+  }
   /* IMAGENES */
   .toro-milano {
     width: 35%;
@@ -896,4 +743,169 @@ footer {
   section a {
     margin-left: 43%;
   }
+}
+@media only screen and (min-width: 992px) {
+  #navcolorfix {
+    --bs-nav-link-color: rgb(255,255,255);
+    --bs-nav-link-hover-color: #ffd204;
+  }
+}
+/*TABLAS*/
+.inscriptos {
+  margin-left: 35px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid gray;
+}
+.inscriptos tr:nth-child(odd) {
+  background-color: rgb(214, 238, 238);
+}
+.inscriptos tr:nth-child(even) {
+  background-color: rgb(194, 225, 221);
+}
+.inscriptos td {
+  text-align: center;
+  padding: 13px;
+}
+.inscriptos td:first-child {
+  text-align: left;
+}
+
+.tablescroll {
+  height: 500px;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.tablescroll::-webkit-scrollbar {
+  display: none;
+}
+
+div table {
+  width: 25%;
+  border: 1px solid;
+  font-family: "Lobster", sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+td {
+  color: #414444;
+}
+
+/*Color del icono de trophy*/
+.contenedortablas {
+  margin-top: 15%;
+}
+
+.fa-trophy {
+  color: #eae31f;
+}
+
+section table {
+  width: 50%;
+  border: 1px solid;
+  font-family: "Lobster", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  border-color: #097F72;
+  margin-left: auto;
+  margin-right: auto;
+}
+section td {
+  color: #8E9292;
+}
+
+.scroll-bg {
+  background: rgba(0, 0, 0, 0);
+  width: 580px;
+  margin-left: 1%;
+}
+
+.scroll-div {
+  width: 600px;
+  background: rgba(0, 0, 0, 0);
+  height: 600px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-div::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-div::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+.scroll-div::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(253, 187, 45) 100%);
+  /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
+  border-radius: 10px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+footer p {
+  color: #B2B6B7;
+}
+footer section {
+  display: inline-flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-right: 12px;
+}
+
+.instagram {
+  font-size: 25px;
+  color: #e5c838;
+}
+
+.youtube {
+  font-size: 25px;
+  color: #e5c838;
+}
+
+/*FORMS*/
+form label {
+  color: white;
+  font-family: "Assistant", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+form input {
+  width: 30%;
+  padding: 12px 20px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: rgba(0, 0, 0, 0);
+  display: block;
+  color: white;
+}
+form a {
+  color: white;
+  font-family: "Assistant", sans-serif;
+}
+
+/*Olvidaste tu contraseña?*/
+.sesioncontrasena {
+  color: white;
+  margin-left: 1%;
+  font-family: "Assistant", sans-serif;
 }/*# sourceMappingURL=main.css.map */
