@@ -22,7 +22,7 @@
     overflow-x: hidden;
 }
 .rankings{
-    background-color: #292828;
+    background-attachment: fixed;
     background-image: url(../imagenes/cuernoToro.png);
     background-repeat: no-repeat;
 }
@@ -176,10 +176,9 @@ section{
     h4{
         color: #bbbbbb;
         font-family: 'Lobster', sans-serif;
-        text-align: center;
+        text-align: justify;
         font-size: 20px;
         position: unset;
-        margin-left: -50%;
     }
 
     h6{

@@ -270,7 +270,7 @@ li a:hover {
 }
 
 .rankings {
-  background-color: #292828;
+  background-attachment: fixed;
   background-image: url(../imagenes/cuernoToro.png);
   background-repeat: no-repeat;
 }
@@ -403,10 +403,9 @@ section p {
 .punteros h4 {
   color: #bbbbbb;
   font-family: "Lobster", sans-serif;
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
   position: unset;
-  margin-left: -50%;
 }
 .punteros h6 {
   color: white;
@@ -568,6 +567,13 @@ mark {
     text-align: center;
     display: unset;
   }
+  section h2 {
+    font-size: 175%;
+  }
+  section table {
+    width: 90% !important;
+    font-size: 53% !important;
+  }
   .sesionlinks {
     display: flex;
     justify-content: space-around;
@@ -589,6 +595,30 @@ mark {
     justify-content: center;
     text-align: center;
     margin-left: -1%;
+  }
+  .punteroscontainer {
+    gap: 1%;
+    margin-left: 2%;
+  }
+  .punteros h4 {
+    text-align: left;
+    font-size: 0.75rem;
+  }
+  .punteros h6 {
+    font-size: 12px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .punteros p {
+    font-size: 5.5px;
+    margin-top: -15px;
+  }
+  .punteros img {
+    width: 100%;
+    margin-top: 20%;
+  }
+  #parrafoCuerno {
+    font-size: 40% !important;
   }
   /*Botones*/
   .buttoncuerno {
@@ -677,6 +707,9 @@ mark {
   .iniciarSesion {
     background-image: url(../imagenes/backgroundtablet/sesionbackgroundtablet.png);
   }
+  .rankings {
+    background-image: url(../../../imagenes/backgroundtablet/rankingbackgroundtablet.png);
+  }
   /* HEADER */
   .navbar-nav {
     margin-left: 84%;
@@ -702,7 +735,7 @@ mark {
     width: 45%;
   }
   .punteros h4 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .punteros h6 {
     font-size: 0.8rem;
@@ -714,6 +747,9 @@ mark {
   .punteros img {
     width: 70%;
     margin-top: 15%;
+  }
+  section td {
+    font-size: 0.63rem;
   }
   /* IMAGENES */
   .toro-milano {
@@ -803,14 +839,14 @@ td {
 }
 
 section table {
-  width: 50%;
+  width: 70%;
   border: 1px solid;
   font-family: "Lobster", sans-serif;
   font-size: 18px;
   font-weight: bolder;
   background-color: rgba(0, 0, 0, 0);
   align-items: center;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
   border-color: #097F72;
   margin-left: auto;
