@@ -13,12 +13,14 @@
     background-image: url(../imagenes/inscripcionesToro.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+
+    overflow: hidden;
 }
 .multimedia{
     background-image: url(../imagenes/recordsToro.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-
+    
     overflow-x: hidden;
 }
 .rankings{
@@ -91,8 +93,8 @@ div{
         color: #097F72;
         font-family: 'Heebo', sans-serif; 
         font-size: 30px;
-        margin-top: 25px;
-        margin-left: 5%;
+        margin-top: -34rem;
+        margin-left: 135px;
     }
 
     h6{
@@ -101,7 +103,7 @@ div{
         font-family: 'Assistant', sans-serif;
         font-style: italic;
         margin-left: 104px;
-        margin-top: -32px;
+        margin-top: -14px;
     } 
 
     p{
@@ -196,10 +198,10 @@ section{
     color:#FFD204;
     font-family: 'Heebo', sans-serif; 
     font-size: 45px; 
-    position: absolute;
-    right: 200px;
-    top: 300px;
     text-align: center;
+    position: relative;
+    margin-left: 50%;
+    bottom: -3rem;
 }
 
 .pieimagen{
@@ -273,4 +275,10 @@ mark {
 
 #active{
     color: #1494BF;
+}
+
+#toroinscrip{
+    width: 18rem;
+    margin-left: 6rem;
+    box-shadow: 5px 5px 10px #423601;
 }

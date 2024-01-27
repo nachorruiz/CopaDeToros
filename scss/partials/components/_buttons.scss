@@ -37,20 +37,13 @@ div .buttoncuerno {
     padding: 16px;
     text-align: center;
     font-size: 16px;
-    margin: 0 0 2% 0;
-    opacity: 0.8;
-    transition: 0.3s;
-    display: inline-block;
+    margin: 2% auto auto auto;
+    position: relative;
+    right: -3rem;
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-left: 138px;
     display: flex;
-    margin-left: 42%;
-    &:hover{
-        opacity: 1;
-    }
-    
 }
 
 .inicioSesion{

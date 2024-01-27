@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap");
 /*@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap'); */
 /*@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');*/
+.animate__fadeInRight {
+  animation-duration: 1s;
+}
+
 /*BOTONES*/
 .buttoncuerno {
   background-color: #FFD204;
@@ -42,19 +46,13 @@ div .buttoncuerno {
   padding: 16px;
   text-align: center;
   font-size: 16px;
-  margin: 0 0 2% 0;
-  opacity: 0.8;
-  transition: 0.3s;
-  display: inline-block;
+  margin: 2% auto auto auto;
+  position: relative;
+  right: -3rem;
   text-decoration: none;
   cursor: pointer;
   border-radius: 4px;
-  margin-left: 138px;
   display: flex;
-  margin-left: 42%;
-}
-.buttoninscripcion:hover {
-  opacity: 1;
 }
 
 .inicioSesion {
@@ -147,7 +145,7 @@ div .buttoncuerno {
 }
 
 /*HEADER*/
-.logo {
+#logo {
   width: 10%;
   margin-left: 0.8%;
 }
@@ -260,6 +258,7 @@ li a:hover {
   background-image: url(../imagenes/inscripcionesToro.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .multimedia {
@@ -330,8 +329,8 @@ div h2 {
   color: #097F72;
   font-family: "Heebo", sans-serif;
   font-size: 30px;
-  margin-top: 25px;
-  margin-left: 5%;
+  margin-top: -34rem;
+  margin-left: 135px;
 }
 div h6 {
   color: white;
@@ -339,7 +338,7 @@ div h6 {
   font-family: "Assistant", sans-serif;
   font-style: italic;
   margin-left: 104px;
-  margin-top: -32px;
+  margin-top: -14px;
 }
 div p {
   color: white;
@@ -421,10 +420,10 @@ section p {
   color: #FFD204;
   font-family: "Heebo", sans-serif;
   font-size: 45px;
-  position: absolute;
-  right: 200px;
-  top: 300px;
   text-align: center;
+  position: relative;
+  margin-left: 50%;
+  bottom: -3rem;
 }
 
 .pieimagen {
@@ -492,6 +491,12 @@ mark {
   color: #1494BF;
 }
 
+#toroinscrip {
+  width: 18rem;
+  margin-left: 6rem;
+  box-shadow: 5px 5px 10px #423601;
+}
+
 /* ----------- MEDIA QUERYS ------------ */
 @media only screen and (max-width: 480px) {
   /*BACKGROUND*/
@@ -503,8 +508,12 @@ mark {
   }
   .rankings {
     background-color: #292828;
-    background-image: url(/imagenes/backgroundmobile/rankingsmobile.png);
+    background-image: url(../imagenes/backgroundmobile/rankingsmobile.png);
     background-repeat: no-repeat;
+  }
+  .inscripciones {
+    background-image: url(../imagenes/backgroundmobile/inscripmobile.png);
+    overflow: unset;
   }
   /*HEADER*/
   #sesionmobile {
@@ -531,6 +540,12 @@ mark {
     justify-content: center;
     margin-left: 0;
     text-align: center;
+  }
+  main h3 {
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 0;
+    font-size: 28px;
   }
   main h6 {
     color: white;
@@ -598,27 +613,50 @@ mark {
   }
   .punteroscontainer {
     gap: 1%;
-    margin-left: 2%;
+    margin-left: -7%;
+  }
+  .punteros {
+    /*
+    &:hover{
+        #deployCuernoRank{
+            display: block !important;
+        }
+    }*/
   }
   .punteros h4 {
     text-align: left;
     font-size: 0.75rem;
   }
   .punteros h6 {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 14px;
+    text-align: justify;
   }
   .punteros p {
-    font-size: 5.5px;
-    margin-top: -15px;
+    font-size: 9.5px;
+    margin-top: 0;
+    margin-left: 0;
   }
   .punteros img {
-    width: 100%;
+    width: 79%;
     margin-top: 20%;
+  }
+  .ranksMobile {
+    display: none;
   }
   #parrafoCuerno {
     font-size: 40% !important;
+  }
+  div h2 {
+    margin-top: 189px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .inscripcionestitle {
+    margin-left: 1rem;
+    bottom: -23px;
+    right: 10px;
   }
   /*Botones*/
   .buttoncuerno {
@@ -670,6 +708,18 @@ mark {
     width: 73%;
     height: 36px;
   }
+  .buttoninscripcion {
+    margin: 4% auto auto auto;
+    right: 0;
+    font-size: 12px;
+    padding: 10px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+  }
+  div a {
+    display: unset;
+  }
   /*Forms*/
   form input {
     width: 70%;
@@ -690,6 +740,31 @@ mark {
     width: 55%;
     margin-left: 23.5%;
   }
+  #toroinscrip {
+    width: 13rem;
+    margin-left: 0;
+  }
+  .punteroscontainer .punteros:nth-child(n+3) {
+    margin-top: 56%;
+  }
+  .punteroscontainer .punteros:nth-child(-n+2) {
+    display: inline;
+  }
+  .punteroscontainer .punteros:nth-child(1) {
+    margin-left: 15%;
+  }
+  .punteroscontainer .punteros:nth-child(3) {
+    margin-left: -85%;
+  }
+  /* TABLES */
+  .tablescroll {
+    height: 400px !important;
+    width: 95% !important;
+    margin: 20px auto auto auto;
+  }
+  .inscriptos {
+    margin-left: 15px !important;
+  }
 }
 /* @media only screen and (min-width: 481px) and (max-width: 768px){
 
@@ -708,7 +783,11 @@ mark {
     background-image: url(../imagenes/backgroundtablet/sesionbackgroundtablet.png);
   }
   .rankings {
-    background-image: url(../../../imagenes/backgroundtablet/rankingbackgroundtablet.png);
+    background-image: url(../imagenes/backgroundtablet/rankingbackgroundtablet.png);
+  }
+  .inscripciones {
+    background-image: url(../imagenes/backgroundtablet/inscripbackgroundtablet.png);
+    overflow: unset;
   }
   /* HEADER */
   .navbar-nav {
@@ -726,6 +805,11 @@ mark {
   }
   main p {
     text-align: center;
+  }
+  div h2 {
+    margin-top: 189px;
+    text-align: center;
+    margin-left: 0;
   }
   .sesionlinks {
     display: inline-flex;
@@ -751,6 +835,11 @@ mark {
   section td {
     font-size: 0.63rem;
   }
+  .inscripcionestitle {
+    margin-left: -6rem;
+    bottom: -23px;
+    text-align: center;
+  }
   /* IMAGENES */
   .toro-milano {
     width: 35%;
@@ -769,6 +858,13 @@ mark {
   .inicioGoogle {
     width: 42.5%;
   }
+  .buttoninscripcion {
+    margin: 0.7rem auto auto auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+  }
   /* FORMS */
   form input {
     width: 40%;
@@ -778,6 +874,13 @@ mark {
   }
   section a {
     margin-left: 43%;
+  }
+  /* TABLES */
+  .tablescroll {
+    height: 300px !important;
+    width: 95% !important;
+    margin-left: 0;
+    margin-top: 0 !important;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -792,6 +895,7 @@ mark {
   border-collapse: collapse;
   border-spacing: 0;
   border: 1px solid gray;
+  width: 100%;
 }
 .inscriptos tr:nth-child(odd) {
   background-color: rgb(214, 238, 238);
@@ -811,6 +915,8 @@ mark {
   height: 500px;
   overflow: auto;
   margin-top: 20px;
+  display: inline-block;
+  width: 550px;
 }
 
 .tablescroll::-webkit-scrollbar {
