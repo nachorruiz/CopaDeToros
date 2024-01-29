@@ -1,7 +1,7 @@
 /*BOTONES*/
 .buttoncuerno{
     background-color: #FFD204;
-    font-family: 'Lobster', sans-serif;
+    font-family: "Lobster", sans-serif;
     border: none;
     color: black;
     padding: 8px 16px;
@@ -27,6 +27,25 @@ div .buttoncuerno {
     margin-left: 74%;
     position: absolute;
     margin-top: -20%;
+}
+
+#buttonMultimedia{
+    background-color: #FFD204;
+    font-family: "Lobster", sans-serif;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 48%;
+    display: flex;
+    position: relative;
 }
 
 .buttoninscripcion{

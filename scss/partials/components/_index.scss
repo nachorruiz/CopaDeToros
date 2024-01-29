@@ -20,13 +20,20 @@
     background-image: url(../imagenes/recordsToro.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    
+
     overflow-x: hidden;
 }
 .rankings{
     background-attachment: fixed;
     background-image: url(../imagenes/cuernoToro.png);
     background-repeat: no-repeat;
+}
+.voteFijo{
+    background-color: rgba(23, 32, 42, 0.4);
+    display: inline;
+    padding: 100% 100% 8.5% 0;
+    box-shadow: 50px 50px 50px -46px #696969;
+    z-index: -1;
 }
 
 /*TEXTOS*/
@@ -44,8 +51,8 @@ main{
         font-family: 'Heebo', sans-serif; 
         font-size: 38px;
         font-style: italic;
-        margin-left: 154px;
-        margin-top: -32px;
+        text-align: right;
+        margin-right: 18.5%;
     }
 
     h3{
@@ -58,10 +65,9 @@ main{
     h4{
         color:#FFD204;
         font-family: 'Heebo', sans-serif; 
-        font-size: 18px;
-        position: absolute;
-        right: 320px;
-        top: 230px;
+        font-size: 37px;
+        position: relative;
+        margin: -3% 0 2% 0;
         text-align: center;
     }
 
@@ -86,7 +92,9 @@ div{
     h1{
         color:#FFD204;
         font-family: 'Heebo', sans-serif; 
-        margin-left: 103px;
+        text-align: center;
+        margin-top: 11%;
+        margin-left: 80px;
     }
 
     h2{
@@ -95,6 +103,7 @@ div{
         font-size: 30px;
         margin-top: -34rem;
         margin-left: 135px;
+        text-align: unset;
     }
 
     h6{
@@ -153,8 +162,7 @@ section{
         font-family: 'Heebo', sans-serif; 
         font-size: 45px;
         text-align: center;
-        margin-top: 25px;
-        margin-left: 0;
+        margin: 25px 0 0 0;
     }
 
     p{
@@ -181,6 +189,7 @@ section{
         text-align: justify;
         font-size: 20px;
         position: unset;
+        margin: 0;
     }
 
     h6{
@@ -214,6 +223,7 @@ section{
     font-family: 'Heebo', sans-serif; 
     font-size: 50px;
     text-align: center;
+    margin-left: 0;
 }
 
 mark {
@@ -229,13 +239,51 @@ mark {
     width: 45%;
 }
 
+#subtitulomultimedia{
+    color: white;
+    font-family: 'Heebo', sans-serif; 
+    font-size: 38px;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 20%;
+}
+
 /*MULTIMEDIA*/
+
+#noticiasContenedor{
+    margin-left: 26%;
+    margin-top: 4%;
+    width: 143%;
+
+    .pieimagen{
+        font-size: 17px;
+        margin-right: 65%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+}
+
 .noticias{
-    width: 100%;
+    width: 35%;
+    box-shadow: 6px 0px 22px 4px #141414;
+    transition: 0.2s;
+    &:hover{
+        width: 36%;
+    }
+
+    border-radius: 8px;
 }
 
 .videoyt{
-    width: 100%;
+    width: 35%;
+    box-shadow: 6px 0px 22px 4px #141414;
+    transition: 0.2s;
+    &:hover{
+        width: 36%;
+    }
+
+    border-radius: 8px;
 }
 
 .toro-milano{

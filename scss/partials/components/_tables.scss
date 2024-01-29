@@ -74,31 +74,3 @@ section{
         color: #8E9292 ;
     }
 }
-
-.scroll-bg{
-    background: rgba(0, 0, 0, 0);
-    width: 580px;
-    margin-left: 1%;
-}
-
-.scroll-div{
-    width: 600px;
-    background: rgba(0, 0, 0, 0);
-    height: 600px;
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
-.scroll-div::-webkit-scrollbar{
-    width: 8px;
-}
-
-.scroll-div::-webkit-scrollbar-track{
-    background: rgba(0, 0, 0, 0);
-}
-
-.scroll-div::-webkit-scrollbar-thumb{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,187,45,1) 100%);
-    /*background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);*/
-    border-radius: 10px;
-}
