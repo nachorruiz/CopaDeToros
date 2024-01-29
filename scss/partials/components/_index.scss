@@ -31,7 +31,7 @@
 .voteFijo{
     background-color: rgba(23, 32, 42, 0.4);
     display: inline;
-    padding: 100% 100% 8.5% 0;
+    padding: 300% 100% 8.5% 0;
     box-shadow: 50px 50px 50px -46px #696969;
     z-index: -1;
 }
@@ -93,8 +93,7 @@ div{
         color:#FFD204;
         font-family: 'Heebo', sans-serif; 
         text-align: center;
-        margin-top: 11%;
-        margin-left: 80px;
+        margin: 11% 0 0 0;
     }
 
     h2{
@@ -213,6 +212,15 @@ section{
     bottom: -3rem;
 }
 
+#tituloinscripcion{
+    color: #FFD204;
+    font-family: "Heebo", sans-serif;
+    text-align: center;
+    margin: 0px 0 10px 96px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
 .pieimagen{
     color: gray;
     font-size: 13px;
@@ -244,8 +252,7 @@ mark {
     font-family: 'Heebo', sans-serif; 
     font-size: 38px;
     text-align: center;
-    margin-top: 0;
-    margin-left: 20%;
+    margin: 0;
 }
 
 /*MULTIMEDIA*/

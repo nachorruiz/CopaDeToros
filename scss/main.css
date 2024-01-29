@@ -46,13 +46,12 @@ div .buttoncuerno {
   padding: 8px 16px;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
   opacity: 1;
   transition: 0.3s;
   text-decoration: none;
   cursor: pointer;
   border-radius: 8px;
-  margin-left: 48%;
+  margin: auto;
   display: flex;
   position: relative;
 }
@@ -114,16 +113,27 @@ div .buttoncuerno {
 .cartas {
   position: relative;
   display: flex;
-  justify-content: center;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin: 2% 20%;
+}
+
+.cartas::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  scrollbar-width: 12px;
+}
+
+.cartas::-webkit-scrollbar-thumb {
+  background: rgba(7, 32, 44, 0.7);
+  border-radius: 8px;
 }
 
 .carta {
-  padding: 2rem;
   width: 12%;
   transition: 0.2s;
 }
 .carta:hover {
-  transform: translateY(-2rem);
+  transform: translateY(-1rem);
 }
 
 .cartasestaticas {
@@ -147,16 +157,16 @@ div .buttoncuerno {
 }
 
 .carta:not(:first-child) {
-  margin-left: -10rem;
+  margin-left: 1rem;
 }
 
-.carta:nth-child(n+5) {
-  margin-left: -12rem;
-}
-.carta:nth-child(n+5):hover ~ .carta {
-  transform: translateX(5rem);
-}
-
+/*
+.carta:nth-child(n+5){
+    margin-left: -12rem;
+    &:hover ~ .carta{
+        transform: translateX(5rem);
+    }
+} 
 /*
 .carta:nth-child(n+10){
     margin-left: -13rem;
@@ -309,7 +319,7 @@ li a:hover {
 .voteFijo {
   background-color: rgba(23, 32, 42, 0.4);
   display: inline;
-  padding: 100% 100% 8.5% 0;
+  padding: 300% 100% 8.5% 0;
   box-shadow: 50px 50px 50px -46px #696969;
   z-index: -1;
 }
@@ -363,8 +373,7 @@ div h1 {
   color: #FFD204;
   font-family: "Heebo", sans-serif;
   text-align: center;
-  margin-top: 11%;
-  margin-left: 80px;
+  margin: 11% 0 0 0;
 }
 div h2 {
   color: #097F72;
@@ -468,6 +477,15 @@ section p {
   bottom: -3rem;
 }
 
+#tituloinscripcion {
+  color: #FFD204;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  margin: 0px 0 10px 96px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
 .pieimagen {
   color: gray;
   font-size: 13px;
@@ -499,8 +517,7 @@ mark {
   font-family: "Heebo", sans-serif;
   font-size: 38px;
   text-align: center;
-  margin-top: 0;
-  margin-left: 20%;
+  margin: 0;
 }
 
 /*MULTIMEDIA*/
@@ -592,6 +609,9 @@ mark {
     background-image: url(../imagenes/backgroundmobile/inscripmobile.png);
     overflow: unset;
   }
+  .multimedia {
+    background-image: url(../imagenes/backgroundmobile/multimmobile.png);
+  }
   /*HEADER*/
   #sesionmobile {
     display: unset;
@@ -611,8 +631,7 @@ mark {
     color: #FFD204;
     font-family: "Heebo", sans-serif;
     font-size: 40px;
-    /*position: relative;
-    left: 1%;*/
+    margin-top: 11% !important;
     display: flex;
     justify-content: center;
     margin-left: 0;
@@ -624,14 +643,19 @@ mark {
     margin-left: 0;
     font-size: 28px;
   }
+  main h4 {
+    font-size: 25px;
+    margin: 5% 0 2% 0;
+  }
+  main h4 em {
+    font-size: 35px;
+  }
   main h6 {
     color: white;
     font-size: 15px;
     font-family: "Assistant", sans-serif;
     font-style: italic;
-    /*position: relative;
-    margin-top: -6%;
-    left: -6%;*/
+    margin-top: 0;
     display: flex;
     justify-content: center;
     margin-left: 0;
@@ -725,6 +749,9 @@ mark {
   #parrafoCuerno {
     font-size: 40% !important;
   }
+  div h1 {
+    margin: 0;
+  }
   div h2 {
     margin: 189px 0 0 0;
     text-align: center;
@@ -733,6 +760,16 @@ mark {
     margin-left: 1rem;
     bottom: -23px;
     right: 10px;
+  }
+  #tituloinscripcion {
+    color: #FFD204;
+    font-family: "Heebo", sans-serif;
+    font-size: 40px;
+    margin-top: 11% !important;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    text-align: center;
   }
   /*Botones*/
   .buttoncuerno {
@@ -811,7 +848,7 @@ mark {
     display: block;
     color: white;
   }
-  /*Imagenes*/
+  /* MULTIMEDIA */
   .toro-milano {
     width: 55%;
     margin-left: 23.5%;
@@ -831,6 +868,42 @@ mark {
   }
   .punteroscontainer .punteros:nth-child(3) {
     margin-left: -85%;
+  }
+  .cartas {
+    margin: 2% 5%;
+  }
+  .carta {
+    width: 30%;
+  }
+  .cartasestaticas {
+    margin-top: 5%;
+  }
+  .cartaestatica {
+    padding: 0.4rem;
+    width: 31%;
+  }
+  .cartasporcentajes {
+    gap: 25%;
+    font-size: 15px;
+    margin: 0;
+  }
+  .cartasporcentajes p {
+    margin: 0;
+  }
+  #noticiasContenedor {
+    margin-left: 7%;
+  }
+  #noticiasContenedor .pieimagen {
+    font-size: 12px;
+    text-align: justify;
+    display: block;
+    margin: 0 57% 2% 0;
+  }
+  .noticias {
+    width: 60%;
+  }
+  .videoyt {
+    width: 60%;
   }
   /* TABLES */
   .tablescroll {
@@ -864,6 +937,13 @@ mark {
   .inscripciones {
     background-image: url(../imagenes/backgroundtablet/inscripbackgroundtablet.png);
     overflow: unset;
+  }
+  .multimedia {
+    background-image: url(../imagenes/backgroundtablet/multimbackgroundtablet.png);
+  }
+  .voteFijo {
+    background-color: unset;
+    box-shadow: none;
   }
   /* HEADER */
   .navbar-nav {
@@ -915,10 +995,39 @@ mark {
     bottom: -23px;
     text-align: center;
   }
-  /* IMAGENES */
+  /* MULTIMEDIA */
   .toro-milano {
     width: 35%;
     margin-left: 35%;
+  }
+  .carta {
+    width: 114px;
+  }
+  .cartas {
+    margin: 2% 15%;
+  }
+  .cartasporcentajes {
+    gap: 8rem;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .cartasporcentajes p {
+    margin: 0;
+  }
+  .cartaestatica {
+    width: 175px;
+  }
+  #noticiasContenedor {
+    margin: 4% 0 0 10%;
+  }
+  #noticiasContenedor .pieimagen {
+    margin: 0 44% 2% 0;
+  }
+  .noticias {
+    width: 56%;
+  }
+  .videoyt {
+    width: 56%;
   }
   /* BOTONES */
   .buttoncuerno {

@@ -1,15 +1,26 @@
 .cartas{
     position: relative;
     display: flex;
-    justify-content: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 2% 20%;
+}
+
+.cartas::-webkit-scrollbar{
+    background-color: rgba($color: #000000, $alpha: 0);
+    scrollbar-width: 12px;
+}
+
+.cartas::-webkit-scrollbar-thumb{
+    background: rgba($color: #07202c, $alpha: 0.7);
+    border-radius: 8px;
 }
 
 .carta{
-    padding: 2rem; 
     width: 12%;
     transition: 0.2s;
     &:hover{
-        transform: translateY(-2rem); 
+        transform: translateY(-1rem); 
     }
 }
 
@@ -34,15 +45,15 @@
 }
 
 .carta:not(:first-child){
-    margin-left: -10rem;
+    margin-left: 1rem;
 }
-
+/*
 .carta:nth-child(n+5){
     margin-left: -12rem;
     &:hover ~ .carta{
         transform: translateX(5rem);
     }
-}
+} 
 /*
 .carta:nth-child(n+10){
     margin-left: -13rem;
