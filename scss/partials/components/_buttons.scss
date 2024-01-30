@@ -1,20 +1,18 @@
 /*BOTONES*/
 .buttoncuerno{
-    background-color: #FFD204;
+    background-color: map-get($mainColors, amarillo);
     font-family: "Lobster", sans-serif;
+    @include marginPadding(4px 0 4px 138px, 8px 16px);
     border: none;
     color: black;
-    padding: 8px 16px;
     text-align: center;
     font-size: 16px;
-    margin: 4px 2px;
     opacity: 0.8;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
-    margin-left: 138px;
     display: flex;
     &:hover{
         opacity: 1;
@@ -30,11 +28,11 @@ div .buttoncuerno {
 }
 
 #buttonMultimedia{
-    background-color: #FFD204;
+    background-color: map-get($mainColors, amarillo);
     font-family: "Lobster", sans-serif;
+    @include marginPadding(auto, 8px 16px);
     border: none;
     color: black;
-    padding: 8px 16px;
     text-align: center;
     font-size: 16px;
     opacity: 1;
@@ -42,20 +40,18 @@ div .buttoncuerno {
     text-decoration: none;
     cursor: pointer;
     border-radius: 8px;
-    margin: auto;
     display: flex;
     position: relative;
 }
 
 .buttoninscripcion{
-    background-color: #FFD204;
+    background-color: map-get($mainColors, amarillo);
     font-family: 'Lobster', sans-serif;
+    @include marginPadding(2% auto auto auto, 16px);
     border: none;
     color: black;
-    padding: 16px;
     text-align: center;
     font-size: 16px;
-    margin: 2% auto auto auto;
     position: relative;
     right: -3rem;
     text-decoration: none;

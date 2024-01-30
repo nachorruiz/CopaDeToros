@@ -18,10 +18,10 @@ footer{
 
 .instagram{
     font-size: 25px;
-    color: #e5c838;
+    color: map-get($mainColors, amarillo);
 }
 
 .youtube{
     font-size: 25px;
-    color: #e5c838;
+    color: map-get($mainColors, amarillo);
 } 

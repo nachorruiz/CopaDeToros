@@ -39,9 +39,9 @@
 /*TEXTOS*/
 main{ 
     h1{
-        color:#FFD204;
+        color:map-get($mainColors, amarillo);
         font-family: 'Heebo', sans-serif; 
-        font-size: 50px;
+        font-size: $large;
         margin-left: 35px;
         font-weight: bolder;
     }
@@ -56,14 +56,14 @@ main{
     }
 
     h3{
-        color:#FFD204;
+        color:map-get($mainColors, amarillo);
         font-family: 'Heebo', sans-serif; 
         font-size: 35px;
         margin-left: 109px;
     }
 
     h4{
-        color:#FFD204;
+        color:map-get($mainColors, amarillo);
         font-family: 'Heebo', sans-serif; 
         font-size: 37px;
         position: relative;
@@ -90,7 +90,7 @@ main{
 
 div{
     h1{
-        color:#FFD204;
+        color:map-get($mainColors, amarillo);
         font-family: 'Heebo', sans-serif; 
         text-align: center;
         margin: 11% 0 0 0;
@@ -107,7 +107,7 @@ div{
 
     h6{
         color: white;
-        font-size: 20px;
+        font-size: $medium;
         font-family: 'Assistant', sans-serif;
         font-style: italic;
         margin-left: 104px;
@@ -118,7 +118,7 @@ div{
         color: white;
         font-family: 'Lobster', sans-serif;
         text-align: center;
-        font-size: 10px;
+        font-size: $small;
         margin-left: 5px;
     }
 
@@ -127,7 +127,7 @@ div{
         font-family: sans-serif;
         font-weight: bolder;
         text-align: center;
-        font-size: 10px;
+        font-size: $small;
         margin-left: 5px;
     }
 
@@ -148,7 +148,7 @@ div{
 
 section{ 
     h1{
-        color: #FFD204;
+        color: map-get($mainColors, amarillo);
         font-family: 'Heebo', sans-serif;
         font-size: 55px;
         text-align: center;
@@ -157,7 +157,7 @@ section{
     }
 
     h2{
-        color:#FFD204;
+        color:map-get($mainColors, amarillo);
         font-family: 'Heebo', sans-serif; 
         font-size: 45px;
         text-align: center;
@@ -165,7 +165,7 @@ section{
     }
 
     p{
-        color: #FFD204;
+        color: map-get($mainColors, amarillo);
         font-family: 'Heebo', sans-serif;
         font-weight: bolder;
     }
@@ -176,7 +176,7 @@ section{
         color: white;
         font-family: 'Lobster', sans-serif;
         text-align: center;
-        font-size: 10px;
+        font-size: $small;
         margin-left: 8px;
         position: absolute;
         margin-top: -26px;
@@ -186,7 +186,7 @@ section{
         color: #bbbbbb;
         font-family: 'Lobster', sans-serif;
         text-align: justify;
-        font-size: 20px;
+        font-size: $medium;
         position: unset;
         margin: 0;
     }
@@ -203,7 +203,7 @@ section{
 }
 
 .inscripcionestitle{
-    color:#FFD204;
+    color:map-get($mainColors, amarillo);
     font-family: 'Heebo', sans-serif; 
     font-size: 45px; 
     text-align: center;
@@ -213,11 +213,11 @@ section{
 }
 
 #tituloinscripcion{
-    color: #FFD204;
+    color: map-get($mainColors, amarillo);
     font-family: "Heebo", sans-serif;
     text-align: center;
     margin: 0px 0 10px 96px;
-    font-size: 50px;
+    font-size: $large;
     font-weight: bolder;
 }
 
@@ -227,9 +227,9 @@ section{
 }
 
 .titlesesion{
-    color:#FFD204;
+    color:map-get($mainColors, amarillo);
     font-family: 'Heebo', sans-serif; 
-    font-size: 50px;
+    font-size: $large;
     text-align: center;
     margin-left: 0;
 }
@@ -312,7 +312,7 @@ mark {
     }
 
     h4:hover{
-        color: #FFD204;
+        color: map-get($mainColors, amarillo);
         cursor: default;
     }
 
@@ -323,13 +323,13 @@ mark {
         }
 
         p{
-            color: #FFD204;
+            color: map-get($mainColors, amarillo);
         }
     }
 }
 
 #active{
-    color: #1494BF;
+    color: map-get($mainColors, azul);
 }
 
 #toroinscrip{

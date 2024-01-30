@@ -14,7 +14,7 @@
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #1494BF;
+    color: map-get($mainColors, azul);
 }
 
 .navbar-nav{
@@ -26,7 +26,7 @@
 }
 
 .navbar-toggler{
-    background-color: #1494BF;
+    background-color: map-get($mainColors, azul);
     margin-left: 85%;
     margin-top: -12%;
 }
@@ -71,18 +71,18 @@ li{
         text-decoration: none;
         &:hover{
             text-decoration: none;
-            color: #FFD204;
+            color: map-get($mainColors, amarillo);
         }
     }
 }
 
 .active {
-    color: #1494BF;
+    color: map-get($mainColors, azul);
     font-weight: bolder;
   }
 
 .buttonsesion{
-    background-color: #1494BF;
+    background-color: map-get($mainColors, azul);
     color: white;
     border-radius: 6px;
     padding: 5px 5px;
@@ -92,6 +92,6 @@ li{
     text-align: center;
     &:hover{
         margin-top: -5px;
-        background-color: #FFD204;
+        background-color: map-get($mainColors, amarillo);
     }
 }

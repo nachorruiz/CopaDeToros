@@ -46,7 +46,7 @@
     /*Textos*/
     main{ 
         h1{
-            color:#FFD204;
+            color:map-get($mainColors, amarillo);
             font-family: 'Heebo', sans-serif; 
             font-size: 40px;
             margin-top: 11% !important;
@@ -207,7 +207,7 @@
     }
 
     #tituloinscripcion{
-        color: #FFD204;
+        color: map-get($mainColors, amarillo);
         font-family: "Heebo", sans-serif;
         font-size: 40px;
         margin-top: 11% !important;
@@ -219,7 +219,7 @@
     
     /*Botones*/
     .buttoncuerno{
-        background-color: #FFD204;
+        background-color: map-get($mainColors, amarillo);
         font-family: 'Lobster', sans-serif;
         border: none;
         color: black;
@@ -367,10 +367,16 @@
 
     .noticias{
         width: 60%;
+        &:hover{
+            width: 61%;
+        }
     }
 
     .videoyt{
         width: 60%;
+        &:hover{
+            width: 61%;
+        }
     }
 
     /* TABLES */
@@ -529,10 +535,16 @@
 
     .noticias{
         width: 56%;
+        &:hover{
+            width: 57%;
+        }
     }
 
     .videoyt{
         width: 56%;
+        &:hover{
+            width: 57%;
+        }
     }
 
     /* BOTONES */
@@ -588,6 +600,6 @@
 @media only screen and (min-width: 992px){
     #navcolorfix{
         --bs-nav-link-color: rgb(255,255,255);
-        --bs-nav-link-hover-color: #ffd204;
+        --bs-nav-link-hover-color: map-get($mainColors, amarillo);
     }
 }

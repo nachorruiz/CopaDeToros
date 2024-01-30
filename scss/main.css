@@ -11,19 +11,18 @@
 .buttoncuerno {
   background-color: #FFD204;
   font-family: "Lobster", sans-serif;
+  margin: 4px 0 4px 138px;
+  padding: 8px 16px;
   border: none;
   color: black;
-  padding: 8px 16px;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
   opacity: 0.8;
   transition: 0.3s;
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
   border-radius: 4px;
-  margin-left: 138px;
   display: flex;
 }
 .buttoncuerno:hover {
@@ -41,9 +40,10 @@ div .buttoncuerno {
 #buttonMultimedia {
   background-color: #FFD204;
   font-family: "Lobster", sans-serif;
+  margin: auto;
+  padding: 8px 16px;
   border: none;
   color: black;
-  padding: 8px 16px;
   text-align: center;
   font-size: 16px;
   opacity: 1;
@@ -51,7 +51,6 @@ div .buttoncuerno {
   text-decoration: none;
   cursor: pointer;
   border-radius: 8px;
-  margin: auto;
   display: flex;
   position: relative;
 }
@@ -59,12 +58,12 @@ div .buttoncuerno {
 .buttoninscripcion {
   background-color: #FFD204;
   font-family: "Lobster", sans-serif;
+  margin: 2% auto auto auto;
+  padding: 16px;
   border: none;
   color: black;
-  padding: 16px;
   text-align: center;
   font-size: 16px;
-  margin: 2% auto auto auto;
   position: relative;
   right: -3rem;
   text-decoration: none;
@@ -902,8 +901,14 @@ mark {
   .noticias {
     width: 60%;
   }
+  .noticias:hover {
+    width: 61%;
+  }
   .videoyt {
     width: 60%;
+  }
+  .videoyt:hover {
+    width: 61%;
   }
   /* TABLES */
   .tablescroll {
@@ -1026,8 +1031,14 @@ mark {
   .noticias {
     width: 56%;
   }
+  .noticias:hover {
+    width: 57%;
+  }
   .videoyt {
     width: 56%;
+  }
+  .videoyt:hover {
+    width: 57%;
   }
   /* BOTONES */
   .buttoncuerno {
@@ -1070,7 +1081,7 @@ mark {
 @media only screen and (min-width: 992px) {
   #navcolorfix {
     --bs-nav-link-color: rgb(255,255,255);
-    --bs-nav-link-hover-color: #ffd204;
+    --bs-nav-link-hover-color: map-get($mainColors, amarillo);
   }
 }
 /*TABLAS*/
@@ -1164,12 +1175,12 @@ footer section {
 
 .instagram {
   font-size: 25px;
-  color: #e5c838;
+  color: #FFD204;
 }
 
 .youtube {
   font-size: 25px;
-  color: #e5c838;
+  color: #FFD204;
 }
 
 /*FORMS*/
