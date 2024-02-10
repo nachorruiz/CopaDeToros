@@ -289,18 +289,7 @@
 
     /*Forms*/
     form input {
-        width: 70%;
-        padding: 12px 20px;
-        margin-top: 16px;
-        margin-bottom: 32px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-        border: none;
-        border-bottom: 2px solid gray;
-        background-color: rgba(0, 0, 0, 0);
-        display: block;
-        color: white;
+        width: 70% !important;
     }
 
     /* MULTIMEDIA */
@@ -578,7 +567,7 @@
 
     form{ 
         input{
-            width: 40%;
+            width: 40% !important;
         }
 
         a{
