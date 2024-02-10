@@ -7,6 +7,14 @@
   animation-duration: 1s;
 }
 
+.animate__fadeInLeft {
+  animation-duration: 1s;
+}
+
+.animate__fadeIn {
+  animation-duration: 5s;
+}
+
 /*BOTONES*/
 .buttoncuerno {
   background-color: #FFD204;
@@ -610,6 +618,9 @@ mark {
   }
   .multimedia {
     background-image: url(../imagenes/backgroundmobile/multimmobile.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
   }
   /*HEADER*/
   #sesionmobile {
