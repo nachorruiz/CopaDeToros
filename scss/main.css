@@ -167,24 +167,6 @@ div .buttoncuerno {
   margin-left: 1rem;
 }
 
-/*
-.carta:nth-child(n+5){
-    margin-left: -12rem;
-    &:hover ~ .carta{
-        transform: translateX(5rem);
-    }
-} 
-/*
-.carta:nth-child(n+10){
-    margin-left: -13rem;
-    &:hover ~ .carta{
-        transform: translateX(6rem);
-    }
-}
-
-.carta:nth-child(n+15){
-    margin-left: -13rem;
-}*/
 .carta:hover ~ .carta {
   transform: translateX(4rem);
 }
@@ -621,6 +603,7 @@ mark {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-x: hidden;
+    background-size: cover;
   }
   /*HEADER*/
   #sesionmobile {
@@ -945,6 +928,7 @@ mark {
   }
   .multimedia {
     background-image: url(../imagenes/backgroundtablet/multimbackgroundtablet.png);
+    background-size: cover;
   }
   .voteFijo {
     background-color: unset;

@@ -25,6 +25,7 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         overflow-x: hidden;
+        background-size: cover;
     }
 
     /*HEADER*/
@@ -414,6 +415,7 @@
 
     .multimedia{
         background-image: url(../imagenes/backgroundtablet/multimbackgroundtablet.png);
+        background-size: cover;
     }
 
     .voteFijo{

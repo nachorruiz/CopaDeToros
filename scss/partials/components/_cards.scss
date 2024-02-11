@@ -47,24 +47,6 @@
 .carta:not(:first-child){
     margin-left: 1rem;
 }
-/*
-.carta:nth-child(n+5){
-    margin-left: -12rem;
-    &:hover ~ .carta{
-        transform: translateX(5rem);
-    }
-} 
-/*
-.carta:nth-child(n+10){
-    margin-left: -13rem;
-    &:hover ~ .carta{
-        transform: translateX(6rem);
-    }
-}
-
-.carta:nth-child(n+15){
-    margin-left: -13rem;
-}*/
 
 .carta:hover ~ .carta{
     transform: translateX(4rem);
